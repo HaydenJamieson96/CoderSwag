@@ -13,6 +13,11 @@
 		0302F8C41FEAAB3C006ACB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0302F8C31FEAAB3C006ACB6C /* Assets.xcassets */; };
 		0302F8C71FEAAB3C006ACB6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0302F8C51FEAAB3C006ACB6C /* LaunchScreen.storyboard */; };
 		0302F8D21FEAAE90006ACB6C /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0302F8D11FEAAE90006ACB6C /* CategoryCell.swift */; };
+		0314CEEF1FEABC720008CACB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0314CEEE1FEABC720008CACB /* Product.swift */; };
+		03CAA5321FEAB0FA00E1F36C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAA5311FEAB0FA00E1F36C /* Category.swift */; };
+		03CAA5351FEAB28700E1F36C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAA5341FEAB28700E1F36C /* DataService.swift */; };
+		03CAA5371FEAB8C200E1F36C /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAA5361FEAB8C200E1F36C /* ProductsVC.swift */; };
+		03CAA5391FEABB1600E1F36C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAA5381FEABB1600E1F36C /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		0302F8C61FEAAB3C006ACB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0302F8C81FEAAB3C006ACB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0302F8D11FEAAE90006ACB6C /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		0314CEEE1FEABC720008CACB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		03CAA5311FEAB0FA00E1F36C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		03CAA5341FEAB28700E1F36C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		03CAA5361FEAB8C200E1F36C /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		03CAA5381FEABB1600E1F36C /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		0302F8BB1FEAAB3C006ACB6C /* CoderSwag */ = {
 			isa = PBXGroup;
 			children = (
+				03CAA5331FEAB27C00E1F36C /* Services */,
 				0302F8CF1FEAAE3F006ACB6C /* Model */,
 				0302F8D01FEAAE46006ACB6C /* View */,
 				0302F8CE1FEAAE37006ACB6C /* Controller */,
@@ -72,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0302F8BE1FEAAB3C006ACB6C /* CategoriesVC.swift */,
+				03CAA5361FEAB8C200E1F36C /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -79,6 +91,8 @@
 		0302F8CF1FEAAE3F006ACB6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				03CAA5311FEAB0FA00E1F36C /* Category.swift */,
+				0314CEEE1FEABC720008CACB /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,8 +101,17 @@
 			isa = PBXGroup;
 			children = (
 				0302F8D11FEAAE90006ACB6C /* CategoryCell.swift */,
+				03CAA5381FEABB1600E1F36C /* ProductCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		03CAA5331FEAB27C00E1F36C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				03CAA5341FEAB28700E1F36C /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,8 +187,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0302F8BF1FEAAB3C006ACB6C /* CategoriesVC.swift in Sources */,
+				0314CEEF1FEABC720008CACB /* Product.swift in Sources */,
 				0302F8BD1FEAAB3C006ACB6C /* AppDelegate.swift in Sources */,
+				03CAA5371FEAB8C200E1F36C /* ProductsVC.swift in Sources */,
 				0302F8D21FEAAE90006ACB6C /* CategoryCell.swift in Sources */,
+				03CAA5321FEAB0FA00E1F36C /* Category.swift in Sources */,
+				03CAA5391FEABB1600E1F36C /* ProductCell.swift in Sources */,
+				03CAA5351FEAB28700E1F36C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

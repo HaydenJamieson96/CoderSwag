@@ -12,11 +12,15 @@ class CategoryCell: UITableViewCell {
 
     @IBOutlet weak var categoryTitle: UILabel!
     @IBOutlet weak var categoryImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-   
+    func configureCell(withCategory category: Category) {
+        categoryImage.image = UIImage(named: category.imageName)
+        categoryTitle.text = category.title
+    }
 
 }
